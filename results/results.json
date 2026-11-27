@@ -1,0 +1,428 @@
+{
+  "dataset": "20 Newsgroups bydate (train and test merged), headers, quoted lines and signatures removed",
+  "n_documents": 18605,
+  "n_label_classes": 20,
+  "k": 20,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "subsample_smoke_run": false,
+  "protocol": "unsupervised clustering with k fixed to 20; newsgroup labels are used only for scoring",
+  "results": {
+    "kmeans_tfidf_sparse": {
+      "ari": {
+        "mean": 0.1296,
+        "std_over_seeds": 0.0089
+      },
+      "nmi": {
+        "mean": 0.3305,
+        "std_over_seeds": 0.0157
+      },
+      "purity": {
+        "mean": 0.3352,
+        "std_over_seeds": 0.0179
+      },
+      "seed_stability_mean_pairwise_ari": 0.5662
+    },
+    "kmeans_svd50": {
+      "ari": {
+        "mean": 0.2027,
+        "std_over_seeds": 0.0121
+      },
+      "nmi": {
+        "mean": 0.3615,
+        "std_over_seeds": 0.0088
+      },
+      "purity": {
+        "mean": 0.3816,
+        "std_over_seeds": 0.0105
+      },
+      "seed_stability_mean_pairwise_ari": 0.6547
+    },
+    "kmeans_svd100": {
+      "ari": {
+        "mean": 0.2046,
+        "std_over_seeds": 0.0064
+      },
+      "nmi": {
+        "mean": 0.3769,
+        "std_over_seeds": 0.0034
+      },
+      "purity": {
+        "mean": 0.3965,
+        "std_over_seeds": 0.0137
+      },
+      "seed_stability_mean_pairwise_ari": 0.6378
+    },
+    "kmeans_svd200": {
+      "ari": {
+        "mean": 0.1744,
+        "std_over_seeds": 0.0087
+      },
+      "nmi": {
+        "mean": 0.3482,
+        "std_over_seeds": 0.022
+      },
+      "purity": {
+        "mean": 0.3542,
+        "std_over_seeds": 0.023
+      },
+      "seed_stability_mean_pairwise_ari": 0.5744
+    },
+    "nmf_argmax": {
+      "ari": {
+        "mean": 0.1585,
+        "std_over_seeds": 0.009
+      },
+      "nmi": {
+        "mean": 0.3083,
+        "std_over_seeds": 0.0136
+      },
+      "purity": {
+        "mean": 0.3193,
+        "std_over_seeds": 0.0134
+      },
+      "seed_stability_mean_pairwise_ari": 0.7431
+    }
+  },
+  "k_sweep_svd100_kmeans_seed0": [
+    {
+      "k": 5,
+      "silhouette_cosine": 0.0393,
+      "ari_vs_20_newsgroups": 0.0787
+    },
+    {
+      "k": 10,
+      "silhouette_cosine": 0.049,
+      "ari_vs_20_newsgroups": 0.1343
+    },
+    {
+      "k": 15,
+      "silhouette_cosine": 0.0543,
+      "ari_vs_20_newsgroups": 0.1437
+    },
+    {
+      "k": 20,
+      "silhouette_cosine": 0.0638,
+      "ari_vs_20_newsgroups": 0.1965
+    },
+    {
+      "k": 30,
+      "silhouette_cosine": 0.0744,
+      "ari_vs_20_newsgroups": 0.21
+    },
+    {
+      "k": 40,
+      "silhouette_cosine": 0.086,
+      "ari_vs_20_newsgroups": 0.2174
+    }
+  ],
+  "top_terms_kmeans_svd100_seed0": [
+    {
+      "cluster": 0,
+      "size": 410,
+      "terms": [
+        "turkish",
+        "armenian",
+        "armenians",
+        "armenia",
+        "turks",
+        "12",
+        "soviet",
+        "10"
+      ]
+    },
+    {
+      "cluster": 1,
+      "size": 2376,
+      "terms": [
+        "don",
+        "just",
+        "know",
+        "like",
+        "people",
+        "think",
+        "time",
+        "edu"
+      ]
+    },
+    {
+      "cluster": 2,
+      "size": 408,
+      "terms": [
+        "israel",
+        "israeli",
+        "jews",
+        "arab",
+        "arabs",
+        "jewish",
+        "israelis",
+        "igc"
+      ]
+    },
+    {
+      "cluster": 3,
+      "size": 2118,
+      "terms": [
+        "edu",
+        "article",
+        "cs",
+        "uiuc",
+        "cso",
+        "news",
+        "cmu",
+        "don"
+      ]
+    },
+    {
+      "cluster": 4,
+      "size": 1061,
+      "terms": [
+        "window",
+        "file",
+        "program",
+        "use",
+        "code",
+        "using",
+        "display",
+        "application"
+      ]
+    },
+    {
+      "cluster": 5,
+      "size": 558,
+      "terms": [
+        "ca",
+        "article",
+        "bnr",
+        "uwo",
+        "bc",
+        "hydro",
+        "cs",
+        "bison"
+      ]
+    },
+    {
+      "cluster": 6,
+      "size": 1077,
+      "terms": [
+        "game",
+        "team",
+        "games",
+        "year",
+        "hockey",
+        "season",
+        "players",
+        "play"
+      ]
+    },
+    {
+      "cluster": 7,
+      "size": 496,
+      "terms": [
+        "drive",
+        "scsi",
+        "drives",
+        "disk",
+        "hard",
+        "ide",
+        "controller",
+        "floppy"
+      ]
+    },
+    {
+      "cluster": 8,
+      "size": 377,
+      "terms": [
+        "uk",
+        "ac",
+        "article",
+        "demon",
+        "dcs",
+        "nz",
+        "morgan",
+        "ed"
+      ]
+    },
+    {
+      "cluster": 9,
+      "size": 1611,
+      "terms": [
+        "com",
+        "article",
+        "netcom",
+        "hp",
+        "don",
+        "att",
+        "sandvik",
+        "just"
+      ]
+    },
+    {
+      "cluster": 10,
+      "size": 1143,
+      "terms": [
+        "thanks",
+        "advance",
+        "know",
+        "mail",
+        "hi",
+        "does",
+        "looking",
+        "email"
+      ]
+    },
+    {
+      "cluster": 11,
+      "size": 1281,
+      "terms": [
+        "card",
+        "monitor",
+        "video",
+        "mac",
+        "use",
+        "apple",
+        "board",
+        "bus"
+      ]
+    },
+    {
+      "cluster": 12,
+      "size": 669,
+      "terms": [
+        "sale",
+        "offer",
+        "shipping",
+        "condition",
+        "00",
+        "asking",
+        "interested",
+        "price"
+      ]
+    },
+    {
+      "cluster": 13,
+      "size": 1104,
+      "terms": [
+        "god",
+        "jesus",
+        "bible",
+        "christ",
+        "christian",
+        "christians",
+        "believe",
+        "people"
+      ]
+    },
+    {
+      "cluster": 14,
+      "size": 653,
+      "terms": [
+        "windows",
+        "dos",
+        "file",
+        "ms",
+        "files",
+        "thanks",
+        "run",
+        "os"
+      ]
+    },
+    {
+      "cluster": 15,
+      "size": 350,
+      "terms": [
+        "cc",
+        "edu",
+        "au",
+        "article",
+        "monash",
+        "columbia",
+        "utexas",
+        "ns1"
+      ]
+    },
+    {
+      "cluster": 16,
+      "size": 824,
+      "terms": [
+        "car",
+        "cars",
+        "bike",
+        "engine",
+        "just",
+        "like",
+        "miles",
+        "good"
+      ]
+    },
+    {
+      "cluster": 17,
+      "size": 533,
+      "terms": [
+        "key",
+        "clipper",
+        "encryption",
+        "chip",
+        "keys",
+        "government",
+        "escrow",
+        "nsa"
+      ]
+    },
+    {
+      "cluster": 18,
+      "size": 957,
+      "terms": [
+        "gun",
+        "people",
+        "government",
+        "fbi",
+        "law",
+        "guns",
+        "koresh",
+        "edu"
+      ]
+    },
+    {
+      "cluster": 19,
+      "size": 599,
+      "terms": [
+        "nasa",
+        "gov",
+        "space",
+        "orbit",
+        "shuttle",
+        "jpl",
+        "alaska",
+        "moon"
+      ]
+    }
+  ],
+  "label_names": [
+    "alt.atheism",
+    "comp.graphics",
+    "comp.os.ms-windows.misc",
+    "comp.sys.ibm.pc.hardware",
+    "comp.sys.mac.hardware",
+    "comp.windows.x",
+    "misc.forsale",
+    "rec.autos",
+    "rec.motorcycles",
+    "rec.sport.baseball",
+    "rec.sport.hockey",
+    "sci.crypt",
+    "sci.electronics",
+    "sci.med",
+    "sci.space",
+    "soc.religion.christian",
+    "talk.politics.guns",
+    "talk.politics.mideast",
+    "talk.politics.misc",
+    "talk.religion.misc"
+  ]
+}
