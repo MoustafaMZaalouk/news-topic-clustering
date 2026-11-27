@@ -38,6 +38,7 @@ Plots: `results/clustering.png`. Raw numbers and all 20 clusters' top terms: `re
 - Agreement with the labels is modest. The best setting (SVD-100 then k-means) has ARI about 0.20 and NMI about 0.38. Many newsgroups overlap in topic (several `comp.*`, `talk.politics.*`, `religion`), so a ceiling of 1.0 is not a fair target.
 - SVD before k-means helped over sparse k-means (ARI 0.20 against 0.13). SVD with 200 components was worse than with 50 or 100. This is one corpus and fixed other settings, so it is a description, not a rule.
 - The clusterings differ between seeds (stability 0.57 to 0.74). NMF is the most stable but scores lower against the labels.
+- NMF was run with `max_iter=200`. In a check on this data it did not fully converge for 3 of the 5 seeds (seeds 1, 2 and 4), so the NMF numbers above come from partly converged fits. I did not re-run with more iterations.
 - The silhouette score rises with k and does not point to 20, so it is not usable for choosing k here.
 - Some clusters group by posting style or email domain, not topic. For example cluster 3 is dominated by `edu article cs uiuc cso news cmu` and cluster 9 by `com article netcom hp att`. Headers and quotes were removed, but sender signatures and domains remain in the body in many posts. Other clusters are clearly topical:
 
